@@ -9,9 +9,24 @@
         color: #2020131 !important;
         font-family: Nunito, sans-serif !important;
       }
-      <link rel="icon" href="http://example.com/favicon.png">
+
+      table {
+        font-family: Nunito, sans-serif !important;
+        border-collapse: collapse;
+        margin-left: 3%;
+        margin-right: 20%
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 5px;
+      }
+
+      <link rel="icon"href="http://example.com/favicon.png">
     </style>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="google-site-verification" content="yHhm-yeXbpS4SCX4-Oi2BcRwkVEgIWJKb0GmVPCXnq0" />
   </head>
   <body>
@@ -19,29 +34,83 @@
     <hr>
     <article>
       <header style="font-size:20px; position:relative; margin-left: 20%; top:10px; color:#561835">➔ About Me </header>
-      <p style="position:relative; margin-left: 25%; top:2px; margin-right:25%"> I'm a UC Berkeley student studying <a href="https://guide.berkeley.edu/undergraduate/degree-programs/electrical-engineering-computer-sciences/">EECS</a> and <a href="https://guide.berkeley.edu/undergraduate/degree-programs/energy-engineering/">Energy Engineering</a>. I'm interested in electrical & computer engineering and its many applications, especially to energy and aerospace. Feel free to reach out with opportunities, questions, and/or advice - I'm always eager to learn.
-      
-        <br> <a href="courses.html" title="Courses" style="margin-left:5%">View Courses</a></br>
-
-    
-      </p>
-      
+      <p style="position:relative; margin-left: 25%; top:2px; margin-right:25%"> I'm a UC Berkeley student studying <a href="https://guide.berkeley.edu/undergraduate/degree-programs/electrical-engineering-computer-sciences/">EECS</a> and <a href="https://guide.berkeley.edu/undergraduate/degree-programs/energy-engineering/">Energy Engineering</a>. I'm interested in electrical & computer engineering and its many applications, especially to energy and aerospace. Feel free to reach out with opportunities, questions, and/or advice - I'm always eager to learn. </p>
     </article>
-    
+    <details style="margin-left:25%">
+      <summary>
+        <a href="courses.html" title="Courses" style="margin-left:%"><b> Coursework</b></a>
+      </summary> These are the courses I've taken so far at UC Berkeley. <table>
+        <tr>
+          <th>Number</th>
+          <th>Title and/or Topics</th>
+          <th>Professor(s)</th>
+        </tr>
+        <tr>
+          <td>EECS 16A/B</td>
+          <td>Designing Information Devices & Systems (Circuit Design, Signal Processing, Intro ML) </td>
+          <td>Miki Lustig, Ana Claudia Arias</td>
+        </tr>
+        <tr>
+          <td>CS 61A</td>
+          <td>Structure & Interpretation of Computer Programs (in Python, Scheme, SQL)</td>
+          <td>John DeNero</td>
+        </tr>
+        <tr>
+          <td>CS 61B</td>
+          <td>Data Structures, Algorithms, & Software Engineering (in Java)</td>
+          <td>Joshua Hug</td>
+        </tr>
+        <tr>
+          <td>MATH 54</td>
+          <td>Linear Algebra & Differential Equations</td>
+          <td>Lin Lin</td>
+        </tr>
+        <tr>
+          <td>PHYSICS 7B</td>
+          <td>Heat, Electricity & Magnetism</td>
+          <td>Ronnie Spitzer</td>
+        </tr>
+        <tr>
+          <td>EE 143</td>
+          <td>Microfabrication Technology</td>
+          <td>Ali Javey</td>
+        </tr>
+      </table> Seminars: <table>
+        <tr>
+          <th>Course Num.</th>
+          <th>Topic</th>
+          <th>Professor(s)</th>
+        </tr>
+        <tr>
+          <td>EE 24</td>
+          <td>BLISS: Berkeley Low-Cost Interplanetary Solar Sail </td>
+          <td>Kristofer Pister, Andrew Westphal</td>
+        </tr>
+        <tr>
+          <td>EE 39</td>
+          <td>Hands-on HAM Radio</td>
+          <td>Miki Lustig</td>
+        </tr>
+        <tr>
+          <td>NE 24</td>
+          <td>Nuclear Engineering Seminar (NE Research & Professional Ethics)</td>
+          <td>Karl van Bibber</td>
+        </tr>
+        <tr>
+          <td>E 93</td>
+          <td>Energy Engineering Seminar</td>
+          <td>Scott Moura</td>
+        </tr>
+      </table>
+    </details>
     <article>
       <header style="font-size:20px; position:relative; margin-left: 20%; top:10px; color:#561835">➔ Contact</header>
-      <p style="position:relative; margin-left: 25%; top:2px; margin-right:25%">
-        suhrith [at] berkeley [dot] edu <> <a href="https://www.linkedin.com/in/suhrithbellamkonda/">LinkedIn</a>
+      <p style="position:relative; margin-left: 25%; top:2px; margin-right:25%"> suhrith [at] berkeley [dot] edu <a href="https://www.linkedin.com/in/suhrithbellamkonda/">LinkedIn</a>
         <br> Let's talk about books, emerging tech, music, fine art, or poetry!
-        
       </p>
     </article>
     <p style="position:relative; margin-left: 30%; top:2px; margin-right:10%">
-        <img src="./campanile.png"
-            width="250" 
-            height="400" />
+      <img src="./campanile.png" width="250" height="400" />
     </p>
-    
-    
   </body>
 </html>
