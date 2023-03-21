@@ -46,6 +46,48 @@ a:hover{
 summary:hover{
     background-color: lightgray;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: lightgray;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 6px;
+  margin-top: 150px;
+  margin-left: 15px;
+  margin-right:25%;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+ content: " ";
+  position: absolute;
+  top: 50%;
+  right: 100%; /* To the left of the tooltip */
+  margin-top: -5px;
+  border-width: 5px;
+
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.tooltip .tooltiptext {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility:visible;
+  opacity: 1;
+}
 
 
 
@@ -64,8 +106,12 @@ summary:hover{
         
       <header class = "lightmode" style="font-size:20px; position:relative; margin-left: 20%; top:10px;  outline: outset white ; width:53.75%">➔ About Me </header>
       <p style="position:relative; margin-left: 25%; top:2px; margin-right:25%; width:50%"> I'm a UC Berkeley student studying <a href="https://guide.berkeley.edu/undergraduate/degree-programs/electrical-engineering-computer-sciences/">EECS</a> and <a href="https://guide.berkeley.edu/undergraduate/degree-programs/energy-engineering/">Energy Engineering</a>. I'm interested in electrical & computer engineering and its many applications, especially to energy and aerospace. Feel free to reach out with opportunities, questions, and/or advice - I'm always eager to learn. </p>
-     <p style="position:relative; margin-left: 30%; top:2px; margin-right:10%">
-      <img src= "./campanileComposite.png" width="420" height="500" />
+     <p class = "tooltip" style="position:relative; margin-left: 30%; top:2px; margin-right:10%">
+         
+<img src= "./campanileComposite.png" width="420" height="500" />
+  <span class="tooltiptext">Campanile at Night</span>
+
+
     </p>
     </article>
     <details style="margin-left:25%">
